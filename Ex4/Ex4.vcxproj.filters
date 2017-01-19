@@ -24,12 +24,24 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ex4.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
+    <ClCompile Include="ex4_1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Ex4.cpp">
+    <ClCompile Include="ex4_2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ex4_3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ex4_4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
