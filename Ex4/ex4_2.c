@@ -11,13 +11,14 @@ void MaxSet(int arr[], int size)
 
 int longestSet(int arr[], int size, int i, int biggerThan, int count)
 {
+	int length1, length2;
 	if (i == size) 
 		return count;
 
-	int length1 = longestSet(arr, size, i + 1, biggerThan, count);
+	length1 = longestSet(arr, size, i + 1, biggerThan, count);
 	if (arr[i] > biggerThan)
 	{
-		int length2 = longestSet(arr, size, i + 1, arr[i], count + 1);
+		length2 = longestSet(arr, size, i + 1, arr[i], count + 1);
 		if (length2 > length1) length1 = length2;
 	}
 
