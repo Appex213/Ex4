@@ -1,6 +1,8 @@
 #include "ex4.h"
 #include <stdio.h>
 
+int CheckIfEqual(char s1[], char s2[], int i, int j, int count);
+
 void DiffersInNChars(char s1[], char s2[], int n)
 {
 	if (CheckIfEqual(s1, s2, 0, 0, 0) == n)

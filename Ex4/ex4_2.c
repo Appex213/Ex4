@@ -1,6 +1,8 @@
 #include "ex4.h"
 #include <stdio.h>
 
+int longestSet(int arr[], int size, int i, int finelmax, int count);
+
 void MaxSet(int arr[], int size)
 {
 	int i = 0, biggerThan = 0, count = 0, maxSet;
@@ -19,7 +21,8 @@ int longestSet(int arr[], int size, int i, int biggerThan, int count)
 	if (arr[i] > biggerThan)
 	{
 		length2 = longestSet(arr, size, i + 1, arr[i], count + 1);
-		if (length2 > length1) length1 = length2;
+		if (length2 > length1)
+			length1 = length2;
 	}
 
 	return length1;

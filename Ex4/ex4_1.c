@@ -2,6 +2,10 @@
 #include <stdio.h>
 #include <string.h>
 
+int ReverseStrings(char buffer[]);
+void PrintStrings(const char str[]);
+
+
 void ReverseStringsManager(char str[])
 {
 	printf("The word list: ");
