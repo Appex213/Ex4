@@ -25,11 +25,25 @@ int main()
 			int size = 9;
 			int arr[] = { 45,1,21,3,33,6,53,9,18 };
 			MaxSet(arr, size);
-
 			break;
 	
 		case 3:
+			printf("Ender string s1 and s2 and number n:\n");
+			char s1[30], s2[30];
+			int n;
+			scanf("%s", s1);
+			scanf("%s", s2);
+			scanf("%d", &n);
+			DiffersInNChars(s1, s2, n);
 			break;
+	
+		case 4:
+
+
+		default:
+			printf("No such option.");
+	
+	
 	}
 	
 	} while (x!=0);
