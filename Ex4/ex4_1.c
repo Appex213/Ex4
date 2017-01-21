@@ -10,7 +10,9 @@ void ReverseStringsManager(char str[])
 {
 	printf("The word list: ");
 	PrintStrings(str);
-	if (ReverseStrings(str))
+	if (strlen(str)==0)
+		printf("Reverse: ");
+	else if (ReverseStrings(str))
 		printf("The list is illegal!\n");
 	else
 	{

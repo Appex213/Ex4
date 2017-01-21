@@ -9,9 +9,10 @@ void ReverseStringsManager(char str[]);
 
 void MaxSet(int arr[], int size);
 
-
 /*----------EX4_3----------*/
 
 void DiffersInNChars(char s1[], char s2[], int n);
 
 /*----------EX4_4----------*/
+
+int DividedBy3(char str[]);

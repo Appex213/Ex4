@@ -38,10 +38,18 @@ int main()
 			break;
 	
 		case 4:
-
+			printf("Enter a number: (1 2 3 only!)\n");
+			char num[1000];
+			scanf("%s", num);
+			int isDivisible = DividedBy3(num);
+			if (isDivisible)
+				printf("Divisible.\n");
+			else
+				printf("Not divisible.\n");
+			break;
 
 		default:
-			printf("No such option.");
+			printf("No such option.\n");
 	
 	
 	}
