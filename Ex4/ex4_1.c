@@ -1,9 +1,21 @@
+/******************************************
+* Matan Ben Moshe
+* 208583070
+* 83-120-04
+* ex4_1.c
+******************************************/
+
+//Header file.
 #include "ex4.h"
+//Standard library.
 #include <stdio.h>
+//String library.
 #include <string.h>
 
+// Declerations
 int ReverseStrings(char buffer[]);
 void PrintStrings(const char str[]);
+
 
 
 void ReverseStringsManager(char str[])
@@ -33,7 +45,7 @@ int ReverseStrings(char buffer[])
 
 	for (i = 0;i < len;i++) 
 	{
-		if (buffer[i]!=',' && ((buffer[i] > 91 && buffer[i] < 96) || buffer[i] < 64 || buffer[i]>123))
+		if (buffer[i]!=',' && ((buffer[i] > 'Z' && buffer[i] < 'a') || buffer[i] < 'A' || buffer[i]>'z'))
 			return -1;
 	}
 

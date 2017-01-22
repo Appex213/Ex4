@@ -6,9 +6,9 @@ int CheckIfEqual(char s1[], char s2[], int i, int j, int count);
 void DiffersInNChars(char s1[], char s2[], int n)
 {
 	if (CheckIfEqual(s1, s2, 0, 0, 0) == n)
-		printf("yes.\n");
+		printf("yes\n");
 	else
-		printf("no.\n");
+		printf("no\n");
 	
 }
 
