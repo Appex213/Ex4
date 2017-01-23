@@ -12,7 +12,7 @@
 //String library.
 #include <string.h>
 //Decleration
-int CheckMod3(char str[], int len, int i, int sum);
+int CheckMod3(char str[], int sum);
 
 /*********************************************************************************************
 Function name: DividedBy3
@@ -27,7 +27,7 @@ int DividedBy3(char str[])
 	if (!strlen(str))
 		return 1;
 	// !0 = true (== if remaider is 0 the number is divisible)
-	if (!CheckMod3(str, strlen(str), 0, 0))
+	if (!CheckMod3(str, 0))
 		return 1;
 	else
 		return 0;
@@ -35,18 +35,18 @@ int DividedBy3(char str[])
 
 /*********************************************************************************************
 Function name: CheckMod3
-Input: string of 1,2 and 3, string length, initial index and initial remainder.
+Input: string of 1,2 and 3 and initial remainder.
 Output: remainder.
 The function operation: Goes to end of string, then goes back, adding and resseting the remainder every time it passes 3.
 **********************************************************************************************/
-int CheckMod3(char str[],int len, int i,int sum)
+int CheckMod3(char str[],int sum)
 {
 	// Stop Condition - go to the end of the string and then return
-	if (i < len)
-		sum = CheckMod3(str, len, i + 1, sum);
+	if (strlen(str) > 1)
+		sum = CheckMod3(str + 1, sum);
 
 	// Pretty self explenatory - add to sum and reset when sum is 3 (3=0, 4=1 etc.) 
-	if (str[i] == '2')
+	if (str[0] == '2')
 	{
 		if (sum == 0)
 			sum = 2;
@@ -55,7 +55,7 @@ int CheckMod3(char str[],int len, int i,int sum)
 		else if (sum == 2)
 			sum = 1;
 	}
-	if (str[i] == '1')
+	if (str[0] == '1')
 	{
 		if (sum == 0)
 			sum = 1;
